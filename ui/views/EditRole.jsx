@@ -148,16 +148,6 @@ export function EditSelf({onCancel}) {
       <h3 className="font-medium">Actions</h3>
       <br />
       <ButtonContainer>
-        {!room.access?.lockedIdentities && (
-          <SecondaryButton
-            onClick={() => {
-              openModal(EditIdentity);
-              onCancel();
-            }}
-          >
-            Edit Profile
-          </SecondaryButton>
-        )}
         {!stageOnly && iModerate && !iSpeak && (
           <SecondaryButton
             onClick={() => addSpeaker(roomId, myId).then(onCancel)}

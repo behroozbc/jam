@@ -59,15 +59,6 @@ export default function Start({newRoom = {}, urlRoomId, roomFromURIError}) {
           <code className="text-gray-900 bg-yellow-200">{urlRoomId}</code> is
           not valid.
           <br />
-          <a
-            href="https://gitlab.com/jam-systems/jam"
-            target="_blank"
-            rel="noreferrer"
-            className="underline text-blue-800 active:text-blue-600"
-          >
-            Learn more about Room IDs
-          </a>
-          <br />
           <br />
           You can use the button below to start a room.
         </div>
