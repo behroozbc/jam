@@ -41,7 +41,8 @@ services:
       - traefik.enable=true
     profiles: [ "metrics" ]
   ui:
-    image: registry.gitlab.com/jam-systems/jam/ui:${CHANNEL}
+    # image: registry.gitlab.com/jam-systems/jam/ui:${CHANNEL}
+    build: ../ui
     restart: always
     environment:
       - JAM_HOST
